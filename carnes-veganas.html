@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Carnes Veganas | MasterClass — Cocina Carne 100% Vegetal</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --color-primary: #f7941d;
+    --color-secondary: #ff6b00;
+    --color-bg: #232323;
+    --color-bg-alt: #1a1a1a;
+    --color-text: #e6e6e6;
+    --color-text-muted: #b8b8b8;
+    --color-heading: #ffffff;
+    --color-cta: #f7941d;
+    --color-cta-hover: #d97b0a;
+    --color-guarantee: #2a2318;
+    --color-card: #2c2c2c;
+    --color-border: #3d3d3d;
+  }
+  * { box-sizing: border-box; }
+  body {
+    background: var(--color-bg);
+    color: var(--color-text);
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+  }
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Montserrat', sans-serif;
+  }
+  .text-brand { color: var(--color-primary); }
+  .bg-brand { background-color: var(--color-primary); }
+  .btn-cta {
+    background: linear-gradient(135deg, var(--color-cta), var(--color-secondary));
+    color: #1a1a1a;
+    font-weight: 800;
+    transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+    box-shadow: 0 8px 24px rgba(247,148,29,0.35);
+  }
+  .btn-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 30px rgba(247,148,29,0.5);
+    background: linear-gradient(135deg, var(--color-cta-hover), var(--color-cta));
+  }
+  .card {
+    background: var(--color-card);
+    border: 1px solid var(--color-border);
+  }
+  .section-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, var(--color-border), transparent);
+  }
+  .sticky-header {
+    background: rgba(20,20,20,0.92);
+    backdrop-filter: blur(6px);
+  }
+  .faq-toggle svg { transition: transform .2s ease; }
+  .faq-item.open .faq-toggle svg { transform: rotate(45deg); }
+  .faq-panel { max-height: 0; overflow: hidden; transition: max-height .3s ease; }
+  .faq-item.open .faq-panel { max-height: 400px; }
+  .leaf-badge {
+    background: rgba(247,148,29,0.12);
+    border: 1px solid rgba(247,148,29,0.4);
+  }
+</style>
+</head>
+<body>
+
+<!-- STICKY HEADER -->
+<header id="stickyHeader" class="sticky-header fixed top-0 left-0 w-full z-50 py-3 px-4 md:px-8 flex items-center justify-between opacity-0 -translate-y-full transition-all duration-300">
+  <div class="font-heading font-extrabold text-lg text-white">CARNES <span class="text-brand">VEGANAS</span></div>
+  <a href="https://go.hotmart.com/M106623660H?ap=3aaa" class="btn-cta px-5 py-2 rounded-full text-sm font-heading">Quiero mi acceso →</a>
+</header>
+
+<!-- HERO -->
+<section class="pt-16 pb-14 px-5 md:px-8 text-center max-w-3xl mx-auto">
+  <div class="leaf-badge inline-block px-4 py-1.5 rounded-full text-xs font-semibold text-brand tracking-wide uppercase mb-6">
+    🌱 MasterClass Digital · Avalado por Hotmart
+  </div>
+  <h1 class="font-heading font-black text-3xl md:text-5xl leading-tight text-white mb-5">
+    Descubre el Secreto para Cocinar Carne <span class="text-brand">100% Vegetal</span> que Sabe, Luce y se Siente Como Carne de Verdad
+  </h1>
+  <p class="text-lg md:text-xl text-gray-300 mb-8 leading-relaxed">
+    El MasterClass <strong class="text-white">Carnes Veganas</strong> te enseña, paso a paso, a preparar seitán y soya con sazón mexicano que conquista hasta a los más carnívoros de tu familia — sin sacrificar tu salud, tus valores ni el sabor que tanto disfrutas.
+  </p>
+  <a href="https://go.hotmart.com/M106623660H?ap=3aaa" class="btn-cta inline-block px-8 py-4 rounded-full text-lg font-heading">
+    Sí, Quiero Aprender a Cocinar Sin Sacrificar Sabor
+  </a>
+  <p class="text-xs text-gray-500 mt-3">Pago 100% seguro · Acceso inmediato · Garantía de 7 días</p>
+
+  <div class="mt-12 rounded-2xl overflow-hidden border border-[var(--color-border)] shadow-2xl">
+    <img src="https://i.imgur.com/rq0F572.png" alt="MasterClass Carnes Veganas - mockup en computadora, tablet y celular" class="w-full h-auto">
+  </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- PROBLEMA -->
+<section class="py-16 px-5 md:px-8 max-w-3xl mx-auto">
+  <h2 class="font-heading font-extrabold text-2xl md:text-3xl text-white mb-6 text-center">
+    ¿Sabías que puedes disfrutar el sabor de la carne sin que provenga de los animales?
+  </h2>
+  <div class="space-y-5 text-gray-300 leading-relaxed text-base md:text-lg">
+    <p>
+      Si alguna vez intentaste comer más saludable o reducir la carne animal en tu dieta, seguramente ya lo viviste: recetas veganas que prometían mucho y sabían a poco. Texturas raras, sabores aguados, platillos que no convencen ni a ti ni a tu familia.
+    </p>
+    <p>
+      No es que te falte gusto para cocinar. Es que nadie te había mostrado cómo transformar ingredientes simples — como el trigo y la soya — en carne vegetal con el <strong class="text-white">aspecto, la textura y el sazón mexicano</strong> que de verdad se disfruta.
+    </p>
+    <p>
+      Mientras tanto, sigues viendo cómo la comida saludable y con impacto ambiental positivo se vuelve tendencia, y quizás también te preguntas si podrías convertir esta habilidad en un ingreso extra, sin encontrar por dónde empezar.
+    </p>
+  </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- BENEFICIOS -->
+<section class="py-16 px-5 md:px-8 max-w-5xl mx-auto">
+  <h2 class="font-heading font-extrabold text-2xl md:text-3xl text-white mb-10 text-center">
+    ¿Qué vas a lograr con este MasterClass?
+  </h2>
+  <div class="grid md:grid-cols-2 gap-5">
+    <div class="card rounded-xl p-6 flex gap-4">
+      <span class="text-2xl">🥩</span>
+      <p class="text-gray-300"><strong class="text-white">Cocinarás carne 100% vegetal</strong> con sazón mexicano, muy cerca en sabor, aspecto y textura a la carne real — sin sacrificar ninguna vida.</p>
+    </div>
+    <div class="card rounded-xl p-6 flex gap-4">
+      <span class="text-2xl">🌾</span>
+      <p class="text-gray-300"><strong class="text-white">Dominarás el seitán desde cero</strong>, extrayendo el almidón del trigo para preparar tacos al pastor, bistecs, milanesas, brochetas y más.</p>
+    </div>
+    <div class="card rounded-xl p-6 flex gap-4">
+      <span class="text-2xl">🫘</span>
+      <p class="text-gray-300"><strong class="text-white">Romperás el mito de la soya</strong> preparando platillos deliciosos como ceviche, chorizo vegano y chiles poblanos rellenos.</p>
+    </div>
+    <div class="card rounded-xl p-6 flex gap-4">
+      <span class="text-2xl">💪</span>
+      <p class="text-gray-300"><strong class="text-white">Comerás sano y con alto valor proteico</strong>, cubriendo tus necesidades sin las toxinas de la carne animal.</p>
+    </div>
+    <div class="card rounded-xl p-6 flex gap-4">
+      <span class="text-2xl">🎨</span>
+      <p class="text-gray-300"><strong class="text-white">Explotarás tu creatividad en la cocina</strong> con recetas que puedes personalizar a tu propio sazón, sin límites.</p>
+    </div>
+    <div class="card rounded-xl p-6 flex gap-4">
+      <span class="text-2xl">🌍</span>
+      <p class="text-gray-300"><strong class="text-white">Pondrás tu granito de arena por el planeta</strong>, cuidando el medio ambiente mientras cuidas tu salud y la de tu familia.</p>
+    </div>
+    <div class="card rounded-xl p-6 flex gap-4">
+      <span class="text-2xl">🎉</span>
+      <p class="text-gray-300"><strong class="text-white">Sorprenderás a tu familia e invitados</strong> con platillos ricos, nutritivos y con un aspecto muy similar a la carne real.</p>
+    </div>
+    <div class="card rounded-xl p-6 flex gap-4">
+      <span class="text-2xl">💼</span>
+      <p class="text-gray-300"><strong class="text-white">Descubrirás una oportunidad de negocio</strong>: vender hamburguesas, chorizo, tacos o incluso montar tu propia dark kitchen vegana.</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- TESTIMONIOS -->
+<section class="py-16 px-5 md:px-8 max-w-5xl mx-auto">
+  <h2 class="font-heading font-extrabold text-2xl md:text-3xl text-white mb-10 text-center">
+    Lo que dicen quienes ya cocinan sus Carnes Veganas
+  </h2>
+  <div class="grid md:grid-cols-3 gap-6">
+    <!-- TESTIMONIO DE EJEMPLO — REEMPLAZAR -->
+    <div class="card rounded-xl p-6 text-center">
+      <div class="w-16 h-16 rounded-full bg-[var(--color-border)] mx-auto mb-4"></div>
+      <p class="font-bold text-white mb-1">Marcela R.</p>
+      <p class="text-brand text-sm font-semibold mb-3">Dejó de extrañar la carne en 2 semanas</p>
+      <p class="text-gray-400 text-sm italic">"Hice los tacos al pastor de seitán para mi familia y nadie notó la diferencia. Fue una revelación."</p>
+    </div>
+    <!-- TESTIMONIO DE EJEMPLO — REEMPLAZAR -->
+    <div class="card rounded-xl p-6 text-center">
+      <div class="w-16 h-16 rounded-full bg-[var(--color-border)] mx-auto mb-4"></div>
+      <p class="font-bold text-white mb-1">Iván G.</p>
+      <p class="text-brand text-sm font-semibold mb-3">Ahora vende hamburguesas veganas</p>
+      <p class="text-gray-400 text-sm italic">"Empecé vendiendo entre amigos y ya tengo pedidos cada fin de semana. El curso me dio la base técnica que necesitaba."</p>
+    </div>
+    <!-- TESTIMONIO DE EJEMPLO — REEMPLAZAR -->
+    <div class="card rounded-xl p-6 text-center">
+      <div class="w-16 h-16 rounded-full bg-[var(--color-border)] mx-auto mb-4"></div>
+      <p class="font-bold text-white mb-1">Paola S.</p>
+      <p class="text-brand text-sm font-semibold mb-3">Le encontró sabor real a la soya</p>
+      <p class="text-gray-400 text-sm italic">"Siempre pensé que la soya sabía feo. El chorizo vegano me cambió la idea por completo."</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- OFERTA -->
+<section class="py-16 px-5 md:px-8 max-w-3xl mx-auto">
+  <h2 class="font-heading font-extrabold text-2xl md:text-3xl text-white mb-4 text-center">
+    Todo lo que incluye tu MasterClass Carnes Veganas
+  </h2>
+  <p class="text-center text-gray-400 mb-10">6 módulos, contenido paso a paso, para que cocines con confianza desde el primer día.</p>
+
+  <div class="card rounded-2xl p-6 md:p-8 space-y-5">
+    <div>
+      <p class="font-heading font-bold text-white">Módulo 1 · Carnes veganas</p>
+      <p class="text-sm text-gray-400">Introducción, estructura del curso y a quién va dirigido.</p>
+    </div>
+    <div>
+      <p class="font-heading font-bold text-white">Módulo 2 · Cocinando carnes de seitán</p>
+      <p class="text-sm text-gray-400">Base de seitán desde cero, bistecs, brochetas, milanesas, tacos al pastor, chicharrones y fajitas.</p>
+    </div>
+    <div>
+      <p class="font-heading font-bold text-white">Módulo 3 · Cocinando carnes de soya</p>
+      <p class="text-sm text-gray-400">Ceviche, chiles poblanos rellenos de picadillo y chorizo vegano.</p>
+    </div>
+    <div>
+      <p class="font-heading font-bold text-white">Módulo 4 · Cocinando hamburguesas veganas</p>
+      <p class="text-sm text-gray-400">Hamburguesas de soya, avena, lentejas y quinoa.</p>
+    </div>
+    <div>
+      <p class="font-heading font-bold text-white">Módulo 5 · Material adicional (bonos)</p>
+      <p class="text-sm text-gray-400">Mayonesa vegana, papas de gajo, salsa verde y salsa mexicana tatemada.</p>
+    </div>
+    <div>
+      <p class="font-heading font-bold text-white">Módulo 6 · Video respuestas</p>
+      <p class="text-sm text-gray-400">Resolución de dudas frecuentes y compatibilidad con tus dispositivos.</p>
+    </div>
+  </div>
+
+  <div class="text-center mt-10">
+    <p class="text-gray-400 text-sm mb-1">Acceso completo por solo</p>
+    <p class="font-heading font-black text-5xl text-white mb-6">$49.99 <span class="text-lg font-medium text-gray-500">USD</span></p>
+    <a href="https://go.hotmart.com/M106623660H?ap=3aaa" class="btn-cta inline-block px-8 py-4 rounded-full text-lg font-heading">
+      Quiero Acceso Ahora
+    </a>
+    <p class="text-xs text-gray-500 mt-3">Pago 100% seguro procesado por Hotmart</p>
+  </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- BONOS -->
+<section class="py-16 px-5 md:px-8 max-w-5xl mx-auto">
+  <h2 class="font-heading font-extrabold text-2xl md:text-3xl text-white mb-10 text-center">
+    Además, llévate estos bonos incluidos hoy
+  </h2>
+  <div class="grid md:grid-cols-2 gap-5">
+    <div class="card rounded-xl p-6">
+      <p class="font-heading font-bold text-white mb-1">🥣 Mayonesa vegana</p>
+      <p class="text-gray-400 text-sm mb-2">La receta perfecta para acompañar todas tus carnes veganas.</p>
+      <p class="text-brand text-xs font-semibold">Valorado en $15 USD — GRATIS</p>
+    </div>
+    <div class="card rounded-xl p-6">
+      <p class="font-heading font-bold text-white mb-1">🍟 Papas de gajo</p>
+      <p class="text-gray-400 text-sm mb-2">El acompañante ideal para tus hamburguesas veganas.</p>
+      <p class="text-brand text-xs font-semibold">Valorado en $12 USD — GRATIS</p>
+    </div>
+    <div class="card rounded-xl p-6">
+      <p class="font-heading font-bold text-white mb-1">🌶️ Salsa verde</p>
+      <p class="text-gray-400 text-sm mb-2">Receta clásica mexicana para darle vida a cada platillo.</p>
+      <p class="text-brand text-xs font-semibold">Valorado en $10 USD — GRATIS</p>
+    </div>
+    <div class="card rounded-xl p-6">
+      <p class="font-heading font-bold text-white mb-1">🔥 Salsa mexicana tatemada</p>
+      <p class="text-gray-400 text-sm mb-2">El toque ahumado que hará inolvidables tus tacos veganos.</p>
+      <p class="text-brand text-xs font-semibold">Valorado en $10 USD — GRATIS</p>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- GARANTÍA -->
+<section class="py-16 px-5 md:px-8 max-w-2xl mx-auto">
+  <div class="rounded-2xl p-8 md:p-10 text-center border" style="background: var(--color-guarantee); border-color: rgba(247,148,29,0.35);">
+    <div class="w-14 h-14 rounded-full bg-brand mx-auto mb-4 flex items-center justify-center">
+      <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#1a1a1a" stroke-width="2.5"><path d="M12 2l8 3v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V5l8-3z"/><path d="M9 12l2 2 4-4"/></svg>
+    </div>
+    <h3 class="font-heading font-extrabold text-xl md:text-2xl text-white mb-3">Garantía de 7 días, sin riesgo</h3>
+    <p class="text-gray-300 leading-relaxed">
+      Si dentro de los primeros 7 días sientes que el MasterClass Carnes Veganas no es para ti, escríbenos y te devolvemos tu inversión completa. Sin preguntas incómodas, sin letras chiquitas.
+    </p>
+  </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- ACERCA DE LA PRODUCTORA -->
+<section class="py-16 px-5 md:px-8 max-w-3xl mx-auto">
+  <h2 class="font-heading font-extrabold text-2xl md:text-3xl text-white mb-6 text-center">Sobre Elia Espinoza</h2>
+  <div class="card rounded-2xl p-6 md:p-8 text-gray-300 leading-relaxed">
+    <p class="mb-4">
+      Elia es una sencilla mujer vegetariana desde hace 35 años, nacida en un rancho en el corazón de la Sierra Madre Occidental, en Chihuahua — el estado más grande de México, colindante con Estados Unidos.
+    </p>
+    <p>
+      No es chef de formación, pero es una amante de la cocina que desde niña heredó un sazón ranchero de su madre y su abuela, uno que no vas a encontrar en ningún otro lugar del mundo y que ahora te trae a través de este MasterClass.
+    </p>
+  </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- FAQ -->
+<section class="py-16 px-5 md:px-8 max-w-3xl mx-auto">
+  <h2 class="font-heading font-extrabold text-2xl md:text-3xl text-white mb-10 text-center">Preguntas frecuentes</h2>
+  <div class="space-y-3" id="faqList">
+
+    <div class="faq-item card rounded-xl overflow-hidden">
+      <button class="faq-toggle w-full flex justify-between items-center p-5 text-left">
+        <span class="font-semibold text-white">¿Para quién es este MasterClass?</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+      <div class="faq-panel px-5">
+        <p class="text-gray-400 text-sm pb-5">Para cualquier persona que quiera comer más saludable, reducir su consumo de carne animal o simplemente aprender nuevas técnicas de cocina — sin importar tu nivel de experiencia previa.</p>
+      </div>
+    </div>
+
+    <div class="faq-item card rounded-xl overflow-hidden">
+      <button class="faq-toggle w-full flex justify-between items-center p-5 text-left">
+        <span class="font-semibold text-white">¿Necesito experiencia previa en cocina?</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+      <div class="faq-panel px-5">
+        <p class="text-gray-400 text-sm pb-5">No. Cada receta está explicada paso a paso, desde la base del seitán y la soya, para que cualquier persona pueda seguirla sin problema.</p>
+      </div>
+    </div>
+
+    <div class="faq-item card rounded-xl overflow-hidden">
+      <button class="faq-toggle w-full flex justify-between items-center p-5 text-left">
+        <span class="font-semibold text-white">¿Qué pasa si no me gusta o no funciona para mí?</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+      <div class="faq-panel px-5">
+        <p class="text-gray-400 text-sm pb-5">Tienes 7 días de garantía. Si sientes que no es para ti, te devolvemos tu dinero, sin condiciones.</p>
+      </div>
+    </div>
+
+    <div class="faq-item card rounded-xl overflow-hidden">
+      <button class="faq-toggle w-full flex justify-between items-center p-5 text-left">
+        <span class="font-semibold text-white">¿Cuándo empiezo a ver resultados?</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+      <div class="faq-panel px-5">
+        <p class="text-gray-400 text-sm pb-5">Desde tu primera receta. El Módulo 2 te lleva de la mano para preparar tu primera carne de seitán desde el día uno.</p>
+      </div>
+    </div>
+
+    <div class="faq-item card rounded-xl overflow-hidden">
+      <button class="faq-toggle w-full flex justify-between items-center p-5 text-left">
+        <span class="font-semibold text-white">¿El método de pago es seguro?</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+      <div class="faq-panel px-5">
+        <p class="text-gray-400 text-sm pb-5">Sí. Todo el proceso de pago es gestionado por Hotmart, una de las plataformas de venta de cursos digitales más grandes y confiables de Latinoamérica.</p>
+      </div>
+    </div>
+
+    <div class="faq-item card rounded-xl overflow-hidden">
+      <button class="faq-toggle w-full flex justify-between items-center p-5 text-left">
+        <span class="font-semibold text-white">¿Puedo reproducir el curso en cualquier dispositivo?</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="var(--color-primary)" stroke-width="2.5"><path d="M12 5v14M5 12h14"/></svg>
+      </button>
+      <div class="faq-panel px-5">
+        <p class="text-gray-400 text-sm pb-5">Sí. Accedes desde tu computadora, tablet o celular, cuando quieras y a tu propio ritmo.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="section-divider max-w-4xl mx-auto"></div>
+
+<!-- CTA CIERRE -->
+<section class="py-16 px-5 md:px-8 text-center max-w-2xl mx-auto">
+  <h2 class="font-heading font-extrabold text-2xl md:text-4xl text-white mb-5">
+    Tu familia no notará la diferencia. Tú sí notarás el cambio.
+  </h2>
+  <p class="text-gray-300 mb-8 text-lg">
+    Cientos de recetas te esperan a un clic de distancia. Empieza hoy a cocinar carnes 100% vegetales con sazón mexicano.
+  </p>
+  <a href="https://go.hotmart.com/M106623660H?ap=3aaa" class="btn-cta inline-block px-8 py-4 rounded-full text-lg font-heading">
+    Sí, Quiero Transformar mi Cocina Ahora
+  </a>
+  <p class="text-xs text-gray-500 mt-3">$49.99 USD · Garantía de 7 días · Acceso inmediato</p>
+</section>
+
+<!-- FOOTER -->
+<footer class="py-10 px-5 md:px-8 text-center border-t" style="border-color: var(--color-border);">
+  <p class="font-heading font-bold text-white mb-2">CARNES <span class="text-brand">VEGANAS</span></p>
+  <p class="text-xs text-gray-500 mb-3">Un producto de MasterClasses.La® by Seminarios Online®</p>
+  <p class="text-xs text-gray-600 max-w-xl mx-auto mb-3">
+    Los resultados individuales pueden variar. Este producto no sustituye la asesoría de un profesional de la salud o nutrición.
+  </p>
+  <div class="flex justify-center gap-4 text-xs text-gray-500 mb-3">
+    <a href="#" class="hover:text-brand">Términos y condiciones</a>
+    <a href="#" class="hover:text-brand">Política de privacidad</a>
+  </div>
+  <p class="text-xs text-gray-600">© 2026 Carnes Veganas. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+  // Sticky header on scroll
+  const header = document.getElementById('stickyHeader');
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 400) {
+      header.classList.remove('opacity-0', '-translate-y-full');
+    } else {
+      header.classList.add('opacity-0', '-translate-y-full');
+    }
+  });
+
+  // FAQ accordion
+  document.querySelectorAll('.faq-item').forEach(item => {
+    item.querySelector('.faq-toggle').addEventListener('click', () => {
+      const isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!isOpen) item.classList.add('open');
+    });
+  });
+</script>
+
+</body>
+</html>
